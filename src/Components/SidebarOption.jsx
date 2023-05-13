@@ -10,7 +10,6 @@ function SidebarOption({active, text,Icon}) {
   return (
     <div  className={`sidebarOption ${active && "sidebarOption--active"}`}>
         <Icon/>
-        <avatarImg/>
         <h3>{text}</h3>
     </div>
   )
