@@ -8,10 +8,10 @@ function Video() {
 
     )
   return (
-    <div  className='vid w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-5' >
+    <div  className='vid  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-5' >
         {data?.items?.map((element) => (
         <Link to={`video/${element.id.videoId}`} key={element.id.videoId}>
-                <div className="">
+                <div className="videoCard">
             <img
               className="w-full"
               src={element.snippet.thumbnails.medium.url}
