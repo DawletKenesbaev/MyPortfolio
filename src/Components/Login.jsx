@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import firebase from "../firebase.js";
-
 import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 
@@ -80,7 +79,7 @@ const Login = () => {
           Log in
         </button>
       </form>
-      <div className="login__box-one mt-6">
+      <div className="login__box-one  mt-6">
         <p className="text-center">
           If you are not registered, go to{" "}
           <Link to={"/register"} className="text-teal-400">
@@ -89,7 +88,7 @@ const Login = () => {
         </p>
       </div>
       <div className="mt-6">
-        <h2 className="text-red-700 text-5xl">{error}</h2>
+        <h2 className="text-red-700 text-5xl ml-6">{error}</h2>
       </div>
     </div>
   );

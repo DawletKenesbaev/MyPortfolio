@@ -6,6 +6,9 @@
     position: sticky;
     top: 0;
     z-index: 10;
+    @media only screen and (max-width: 771px) {
+        justify-content:unset;
+    }
 
     &__left {
         display: flex;
@@ -13,7 +16,7 @@
         &-logo {
           height: 25px;
           width: 90px;
-          margin-left: 20px;
+          margin-left: 14px;
         }
     }
     &__middle {
@@ -23,20 +26,33 @@
         border: 2px solid lightgray;
         flex: 1;
         margin-right: 10px;
+       
         &-searchBtn {
             width: 50px;
-            border-left: 1px solid lightgray;
-            color: gray;
+            color: rgba(128, 128, 128, 0.215);
+            animation: scale 1s infinite alternate ease-in-out;
+
         }
     }
     &__right {
         display: flex;
         align-self: center;
+        &-avatar {
+            @media only screen and (max-width: 771px) {
+                width: 30px !important;
+                height: 30px !important;
+            } 
+        }
     }
     &__input {
         display: flex;
         align-items: center;
         width: 45%;
+        @media only screen and (max-width: 771px) {
+            width: 100%;
+            margin-left: 10px;
+
+        }
     }
     &__icons {
         margin-right: 20px;
@@ -61,3 +77,15 @@
     }
    
   }
+
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+
+  }
+  to {
+    transform: scale(1.2);
+    color: red;
+  }
+}

@@ -1,6 +1,4 @@
 import './SidebarOption.scss'
-import { useContext } from 'react'
-
 function SidebarOptionSub({active2,text}) {
 
     return (

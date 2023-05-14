@@ -1,11 +1,13 @@
 import React from 'react';
-
+import { useContext } from 'react';
 
 import './Sidebar.scss';
 
 
 import SidebarOption from './SidebarOption';
 import SidebarOptionSub from './SidebarOptionsub';
+import { ThemeContext } from '../utils/ThemeContext';
+
 
 import HomeIcon from '@mui/icons-material/Home';
 import WhatshotIcon from '@mui/icons-material/Whatshot';
@@ -18,8 +20,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 
 function Sidebar() {
-  return (
-    <div className='sidebar'>
+  const { darkMode ,navActive} = useContext(ThemeContext);
+  return (  
+    <div className={darkMode  ? 'dark ' : 'light'}>
+       <div className={navActive?'sidebar':' my-element hidden'}>
         <SidebarOption  Icon={HomeIcon} active={true} text={'Home'}/>
         <SidebarOption Icon={WhatshotIcon} text={'Trending'}/>
         <SidebarOption Icon={SubscriptionsIcon} text={'Subscription'}/>
@@ -30,7 +34,7 @@ function Sidebar() {
         <SidebarOption Icon={QueueMusicIcon} text={'Music'}/>
         <SidebarOption Icon={ExpandMoreIcon} text={'More'}/>
 
-        <h3>Subscription</h3>
+        <h3 className='subs'>Subscription</h3>
         <SidebarOptionSub active2={true} text={'freecodecamp'}  />
         <SidebarOptionSub active2={true} text={'MrBeast'} />
         <SidebarOptionSub active2={false} text={'CodeEvolution'}/>
@@ -38,6 +42,9 @@ function Sidebar() {
         <SidebarOptionSub active2={false} text={'Mystery'} />
          <SidebarOptionSub active2={false} text={'React'} />
     </div>
+    </div>
+   
+    
   )
 }
 

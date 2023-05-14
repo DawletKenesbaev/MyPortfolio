@@ -7,8 +7,8 @@ import VideoDetails from './Components/VideoDetails';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import { ThemeProvider } from './utils/ThemeContext';
-import SearchResult from './Components/SearchResult';
 import {auth} from './firebase'
+import SearchFeed from './Components/SearchFeed';
 function App() {
   const [user,setUser]=useState(null)
   const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -29,8 +29,8 @@ function App() {
                 <Route path="/" exact element={<Feed/>}/>
                 {/* <Route path="/video/:id " element={<VideoDetails/>}/> */}
                 {/* <Route path="/channel/:id " element={<ChannelDetail/>}/> */}
-                <Route path="/searchResult/:searchQuery" element={<SearchResult/>}/>
                 <Route path="video/:id" element={<VideoDetails/>}/>
+                <Route path='search' element={<SearchFeed/>} />
                 <Route path='login' element={<Login/>}/>
                 <Route path='register' element={user ? <Navigate to={'/'}/> :<Register/>}/>
               </Routes>

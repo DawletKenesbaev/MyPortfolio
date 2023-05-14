@@ -1,5 +1,5 @@
 .sidebar {
-    width: 20%;
+    width: 100%;
     overflow-y: scroll;
     height: 100vh;
     position: sticky;
@@ -19,23 +19,44 @@ line-height: 23px;
 margin-left: 18px;
 color: #000000;
 }
-
+.dark .sidebar {
+    background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+    
+}
+.light .sidebar {
+    background-color:  rgb(245 245 245)    ;
+}
   
 @media only screen and (max-width: 853px) {
     .sidebar {
-        width: 5%;
+        width: 15%;
        
     }
    
   }
   @media only screen and (max-width: 771px) {
     .sidebar {
-        width: 100%;
-        position: absolute ;
-        height: 40px;
-        bottom: 0;
-        left: 0;
+        // width: 100%;
+        // position: fixed ;
+        // height: 40px;
+        // bottom: 0;
+        // left: 0;
+         position: fixed;
+         right: 0;
+         top: calc(100vh - 50px);
+         display: flex;
+         width: 100%;
+         height: 80px;
+         z-index: 1000;
        
     }
+    .sidebar > h3 {
+        display: none;
+    }
    
+  }
+  .subs {
+    margin-left: 17px;
+    opacity: 0.8 ;
+
   }

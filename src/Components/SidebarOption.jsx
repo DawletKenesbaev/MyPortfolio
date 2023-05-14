@@ -1,10 +1,6 @@
 import React from 'react'
 
 
-
-import { useContext } from 'react'
-
-
 import './SidebarOption.scss'
 function SidebarOption({active, text,Icon}) {
   return (

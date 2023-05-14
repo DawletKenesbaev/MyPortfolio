@@ -13,7 +13,7 @@ function Video() {
         <Link to={`video/${element.id.videoId}`} key={element.id.videoId}>
                 <div className="videoCard">
             <img
-              className="w-full"
+              className="w-full videoimg"
               src={element.snippet.thumbnails.medium.url}
               alt=""
             />

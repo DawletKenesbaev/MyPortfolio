@@ -2,15 +2,19 @@ import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
   const [data, setData] = useState({});
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const options = {
     method: "GET",
+    // headers: {
+    //   'X-RapidAPI-Key': '8d43d202c3msh07041a5b9ec792ep16f724jsn20de452e6995',
+    //   'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
+    // }
     headers: {
-      'X-RapidAPI-Key': '8d43d202c3msh07041a5b9ec792ep16f724jsn20de452e6995',
+      'X-RapidAPI-Key': 'dd5363e011msh767a0c94dd79762p1baa7djsn4e571ac78852',
       'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
     }
+
   };
 
   const fetchData = async () => {
@@ -23,10 +27,8 @@ const useFetch = (url) => {
       }
 
       setData(data);
-      setLoading(false);
     } catch (error) {
       console.error(error);
-      setLoading(false);
     }
   };
 
@@ -34,7 +36,7 @@ const useFetch = (url) => {
     fetchData();
   }, [url]);
 
-  return { data, loading, error };
+  return { data, error };
 };
 
 export default useFetch;
