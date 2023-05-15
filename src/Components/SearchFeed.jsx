@@ -11,7 +11,6 @@ function SearchFeed() {
     // const {searchTitle}=useParams()
     const {data}=useFetch(
         `https://youtube-v31.p.rapidapi.com/search?q=${searchTitle}&part=snippet%2Cid&regionCode=US&maxResults=50&order=date`
-
       ) 
     useEffect(()=>{
      
