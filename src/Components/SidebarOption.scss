@@ -52,5 +52,8 @@
     .sidebarOption--activesub {
         display: none;
     }
+    .sidebarOption > .MuiSvgIcon-root {
+        margin-top: 6px;
+    }
    
   }
