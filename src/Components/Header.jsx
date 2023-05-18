@@ -18,7 +18,8 @@ import { ThemeContext } from '../utils/ThemeContext';
 function Header() {
   const { darkMode, toggleDarkMode ,toggleActive,searchTitle,setSearchTitle} = useContext(ThemeContext);   
   const navigate= useNavigate();
-   const handleSubmit=()=>{
+   const handleSubmit=(e)=>{
+    e.preventDefault()
     if (searchTitle) {
       navigate(`search`);
      }
@@ -32,7 +33,7 @@ function Header() {
             </Link>
         </div>
         <div  className="header__input">
-            <form   className="header__middle">
+            <form  onSubmit={handleSubmit} className="header__middle">
                 <input 
                   // onClick={handleSubmit}
                   onChange={(e)=>(setSearchTitle(e.target.value))} 
