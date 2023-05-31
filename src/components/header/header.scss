@@ -1,0 +1,70 @@
+
+
+
+
+
+
+
+
+
+
+.title {
+    font-size: 40px ;
+  }
+  .des {
+    font-size: 20px
+  }
+  
+  .me {
+    background:linear-gradient(var(--color-primary),transparent);
+    height: 60%;
+    max-width: 360px;
+    left:  calc(50% - 11rem);
+    margin-top: 50px;
+    border-radius: 10rem 10rem 0 0;
+    /* padding: rem 1rem 1rem 1rem; */
+    overflow: hidden;
+  
+  }
+  .scroll__down {
+    position: absolute;
+    bottom: 5rem;
+    right: 60px;
+    transform: rotate(90deg);
+    font-weight: 200;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 70vh;
+    }
+ }
+ @media screen and (max-width: 760px) {
+    .header {
+   height: 100vh;
+    }
+    .scroll__down {
+        display: none;
+    }
+ }
+ 
+ 
+
+
+
+
+

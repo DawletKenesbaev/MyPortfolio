@@ -1,0 +1,44 @@
+.experience__container {
+    background: var(--color-bg-variant);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    width: 80%;
+    margin: 0 auto;
+    padding:30px 10px;
+ 
+}
+
+.experience__par {
+   color: var(--color-primary);
+   margin: 10px 0 30px 0;
+}
+.experience__des {
+    font-size: 19px;
+ }
+.experience__container:hover {
+    background: transparent;
+    border-color:var(--color-primary-variant) ;
+}
+.experience__content {
+    // display: grid;
+    // grid-template-columns: 1f  1fr;
+    // row-gap: 5px;
+    column-gap: 10px;
+    row-gap: 40px;
+    padding: 10px;
+}
+.experience__details {
+    display: flex;
+    gap: 10px;
+}
+.experience__details > h4 {
+    font-size: 14px;
+    display: block;
+    font-weight: 600;
+}
+
+.experience__details-icon {
+    color: var(--color-primary);
+    margin-top: 5px;
+}

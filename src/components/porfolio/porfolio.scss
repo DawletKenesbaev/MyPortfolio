@@ -1,0 +1,23 @@
+
+
+.porfolio__item {
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}  
+.porfolio__des > h2 {
+    color: var(--color-primary);
+} 
+.porfolio__item:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+.porfolio__item-img {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.porfolio__item > h3 {
+    margin: 1.2rem 2rem;
+}

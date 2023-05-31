@@ -1,45 +1,31 @@
-import './App.css';
-import React, { useState } from 'react';
-import {BrowserRouter,Routes,Route,Switch, Navigate} from 'react-router-dom'
-import Header from './Components/Header';
-import Feed from './Components/Feed';
-import VideoDetails from './Components/VideoDetails';
-import Login from './Components/Login';
-import Register from './Components/Register';
-import { ThemeProvider } from './utils/ThemeContext';
-import {auth} from './firebase'
-import SearchFeed from './Components/SearchFeed';
+import React from 'react'
+
+
+//components 
+
+import About from './components/about/About.jsx';
+
+
+
+import './App.css'
+import Header from './components/header/Header';
+import Nav from './components/nav/Nav';
+import Experience from './components/experience/Experience.jsx';
+import Porfolio from './components/porfolio/Porfolio';
+import Footer from './components/footer/Footer';
+import Contact from './components/contact/Contact.jsx';
 function App() {
-  const [user,setUser]=useState(null)
-  const unsubscribe = auth.onAuthStateChanged((user) => {
-    if (user) {
-      setUser(user);
-    } else {
-      setUser(null);
-    }
-
-    return unsubscribe;
-  }, []);
-  return (  
-    <ThemeProvider>
-           <BrowserRouter>
-            <div className="App">
-              <Header/>
-              <Routes>
-                <Route path="/" exact element={<Feed/>}/>
-                {/* <Route path="/video/:id " element={<VideoDetails/>}/> */}
-                {/* <Route path="/channel/:id " element={<ChannelDetail/>}/> */}
-                <Route path="video/:id" element={<VideoDetails/>}/>
-                <Route path='search' element={<SearchFeed/>} />
-                <Route path='login' element={<Login/>}/>
-                <Route path='register' element={user ? <Navigate to={'/'}/> :<Register/>}/>
-              </Routes>
-            </div>
-      </BrowserRouter>
-    </ThemeProvider>  
-    
-  );
+  return (
+    <>
+     <Header/>
+     <Nav/>
+     <About/>
+     <Experience/>
+     <Porfolio/>
+     <Contact/>
+     <Footer/>
+    </>
+  )
 }
-//commit
-export default App;
 
+export default App
