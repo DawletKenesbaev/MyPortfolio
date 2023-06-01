@@ -14,7 +14,7 @@ function Header() {
     <header id='#' className='h-[100vh] pt-3 mt-5 overflow-hidden'>
       <div className="container text-center	 header__container  h-[100%] relative">
         <h5 className='des'>Hello I'm</h5>
-        <h1 className='text-l'>Dawlet Kenesbaev</h1>
+        <h1 className='text-l'>Dawlet Kenesbaev  <br /> That is me</h1>
         <h5 className='text-light des mb-5'>Front End Developer</h5>
         <CTA/>  
         <div className="me absolute   ">
