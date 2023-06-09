@@ -10,7 +10,7 @@ function Porfolio() {
       <div className="container sm:text-center md:text-left ">
         <div  className='porfolio__des sm:text-center'>
         <h5>My Recent Work</h5>
-        <h2>My Porfolio</h2>
+        <h2 className='mb-5'>My Porfolio</h2>
         </div>
         <div className="porfolio__container grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <article className='porfolio__item'>

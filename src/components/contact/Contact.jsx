@@ -1,4 +1,6 @@
 import React from 'react'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
 
 import './contact.scss'
 
@@ -8,11 +10,22 @@ import CallIcon from '@mui/icons-material/Call';
 
 
 function Contact() {
+  const form =useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_lj40w6a', 'template_cm31087', form.current, 'E_mf2Z0OqYKoShcn1')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
-    <section id='#contact'>
+    <section id='con'>
       <div className="container">
-        <h5 >Get In Touch</h5>
-        <h2 className='contact__title'>Contact Me</h2>
+        <h3 className='text-center'>Get In Touch</h3>
+        <h2 className='contact__title mb-5 text-center'>Contact Me</h2>
         <div className="contact__container">
           <div className="contact__options">
             <article  className="contact__option">
@@ -34,7 +47,7 @@ function Contact() {
               <a href="+998917883433" target='_blank'>Call Me</a>
             </article>
           </div>
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
             <input type="text" name='name' placeholder='Your Full Name' required/>
             <input type="email" name='email' placeholder='Your Email' required/>
             <textarea name="message" placeholder='Your Message' rows="7"></textarea>
