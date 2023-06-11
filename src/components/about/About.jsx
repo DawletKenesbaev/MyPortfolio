@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './about.scss'
-import Mer from '../../assets/me.png'
+import Mer from '../../assets/me.jpg'
 function About() {
   return (
     <section id='about'>
@@ -18,11 +18,8 @@ function About() {
         </div>
         
         <div className="about__content">
-          <p>Lorem ipsum dolor sit, amet consectetur 
-            adipisicing elit. Maxime eaque ad blanditiis
-             vel soluta sapiente exercitationem harum nam repudiandae
-              ullam, reprehenderit itaque ducimus suscipit eveniet hic 
-              facilis praesentium obcaecati dolorem!</p>
+          <p>I am Dawlet Kenesbaev 19 years old front-end developer . I am really passionate to crreate modern web-sites especcially e-commerce websites.
+            Also i have created more than 30 projects mostly React.js and cant wait working woth real projects              </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
            </div>
         

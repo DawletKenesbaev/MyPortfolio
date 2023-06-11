@@ -34,7 +34,7 @@ function Experience() {
              <article className='experience__details'>
                 <VerifiedIcon className='experience__details-icon'/>
               <div className='d-flex text'>
-                <h4>GIT</h4>
+                <h4>GITHUB</h4>
                 <small className='text-light'>Experienced</small>
               </div>
              </article>
