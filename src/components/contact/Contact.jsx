@@ -22,7 +22,7 @@ function Contact() {
       });
   };
   return (
-    <section id='con'>
+    <section id='contact'>
       <div className="container">
         <h3 className='text-center'>Get In Touch</h3>
         <h2 className='contact__title mb-5 text-center'>Contact Me</h2>
@@ -44,7 +44,7 @@ function Contact() {
               <CallIcon  className='contact__option-icon'/>
               <h4>Phone</h4>
               <h5> +998917883433</h5>
-              <a href="+998917883433" target='_blank'>Call Me</a>
+              <a href="tel:+998917883433"  target='_blank'>Call Me</a>
             </article>
           </div>
           <form ref={form} onSubmit={sendEmail}>

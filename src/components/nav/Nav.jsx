@@ -17,7 +17,7 @@ function Nav() {
       <a href="#" className={ activeNav==='#' ? 'active' :''} onClick={()=>setAtiveNav('#')}><HomeIcon/></a>
       <a href="#about" className={ activeNav==='#about' ? 'active' :''} onClick={()=>setAtiveNav('#about')}><PersonOutlineIcon/></a>
       <a href="#experience"  className={ activeNav==='#experience' ? 'active' :''} onClick={()=>setAtiveNav('#experience')}><LibraryBooksIcon/></a>
-      <a href="#con"  className={ activeNav==='#contact' ? 'active' :''} onClick={()=>setAtiveNav('#contact')}><MessageIcon/></a>
+      <a href="#contact"  className={ activeNav==='#contact' ? 'active' :''} onClick={()=>setAtiveNav('#contact')}><MessageIcon/></a>
     
     </nav>
   )

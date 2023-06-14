@@ -18,8 +18,8 @@ function About() {
         </div>
         
         <div className="about__content">
-          <p>I am Dawlet Kenesbaev 19 years old front-end developer . I am really passionate to crreate modern web-sites especcially e-commerce websites.
-            Also i have created more than 30 projects mostly React.js and cant wait working woth real projects              </p>
+          <p>I am Dawlet Kenesbaev 19 years old front-end developer . I am really passionate to create modern web-sites especcially e-commerce websites.
+            Also i have created more than 30 projects mostly React.js and cant wait working with real projects .             </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
            </div>
         
