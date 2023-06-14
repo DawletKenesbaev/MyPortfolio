@@ -2,8 +2,8 @@ import React from 'react';
 
 import './porfolio.scss';
 import temp  from '../../assets/guardians.jpg'
-
-
+import todo from '../../assets/todolist.png'
+import youtube from '../../assets/youtube.png'
 function Porfolio() {
   return (
     <section id='porfolio'>
@@ -24,12 +24,12 @@ function Porfolio() {
           </article>
           <article className='porfolio__item'>
             <div className="porfolio__item-img">
-              <img src={temp} alt="img" />
+              <img src={todo} alt="img" />
             </div>
-            <h3>Tis is porfolio item title</h3>
-            <p className='mt-3 mb-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illo veniam praesentium blanditiis soluta! Ipsa consectetur dolore dolor explicabo corporis!</p>
-            <a href="" className='btn mr-5' target='_blank'>Git Hub</a>
-            <a href="" className='btn btn-primary'>Live Demo</a>
+            <h3>Todo LIst</h3>
+            <p className='mt-3 mb-3'>I created this project using HTML,CSS,Javascript .It is basic Todo List and has delete and checked functions.it is created using LocalStorage</p>
+            <a href="https://github.com/NUKUS777/TodoList__usingLocalStorage" className='btn mr-5' target='_blank'>Git Hub</a>
+            <a href="https://deft-crisp-eeaffa.netlify.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </article><article className='porfolio__item'>
             <div className="porfolio__item-img">
               <img src={temp} alt="img" />
@@ -37,15 +37,15 @@ function Porfolio() {
             <h3>Tis is porfolio item title</h3>
             <p className='mt-3 mb-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illo veniam praesentium blanditiis soluta! Ipsa consectetur dolore dolor explicabo corporis!</p>
             <a href="" className='btn mr-5' target='_blank'>Git Hub</a>
-            <a href="" className='btn btn-primary'>Live Demo</a>
+            <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
           </article><article className='porfolio__item'>
             <div className="porfolio__item-img">
-              <img src={temp} alt="img" />
+              <img src={youtube} alt="img" />
             </div>
-            <h3>Tis is porfolio item title</h3>
+            <h3>Youtube clone</h3>
             <p className='mt-3 mb-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illo veniam praesentium blanditiis soluta! Ipsa consectetur dolore dolor explicabo corporis!</p>
-            <a href="" className='btn mr-5' target='_blank'>Git Hub</a>
-            <a href="" className='btn btn-primary'>Live Demo</a>
+            <a href="https://github.com/NUKUS777/Youtube-clone" className='btn mr-5' target='_blank'>Git Hub</a>
+            <a href="https://youtube-clone-three-gray.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </article>
         </div>
       </div>
