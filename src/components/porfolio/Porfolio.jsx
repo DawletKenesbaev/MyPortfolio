@@ -52,5 +52,4 @@ function Porfolio() {
     </section>
   )
 }
-//error
 export default Porfolio
