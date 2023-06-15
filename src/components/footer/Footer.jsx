@@ -17,7 +17,7 @@ function Footer() {
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#porfolio">Portfolio</a></li>
-          <li><a href="#con">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div className='footer__socials'>
           <a href="https://www.instagram.com/dawlet_kenesbaev" target='_blank'><InstagramIcon/></a>

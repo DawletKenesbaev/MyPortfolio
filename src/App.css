@@ -7,7 +7,14 @@
   list-style: none;
   text-decoration: none;
 }
+@font-face {
+  font-family: 'Roboto';
+  src:'./assets/Roboto/Roboto-Black.ttf';
+}
 
+body {
+  font-family: 'Roboto';
+}
 :root {
   --color-bg: #1f1f38;
   --color-bg-variant:#2c2c6c;
