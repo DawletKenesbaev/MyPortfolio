@@ -4,6 +4,7 @@ import './porfolio.scss';
 import temp  from '../../assets/guardians.jpg'
 import todo from '../../assets/todolist.png'
 import youtube from '../../assets/youtube.png'
+import finsweet from '../../assets/finsw.png'
 function Porfolio() {
   return (
     <section id='porfolio'>
@@ -40,7 +41,7 @@ function Porfolio() {
             <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
           </article><article className='porfolio__item'>
             <div className="porfolio__item-img">
-              <img src={youtube} alt="img" />
+              <img src={finsweet} alt="img" />
             </div>
             <h3>Finsweet</h3>
             <p className='mt-3 mb-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illo veniam praesentium blanditiis soluta! Ipsa consectetur dolore dolor explicabo corporis!</p>
