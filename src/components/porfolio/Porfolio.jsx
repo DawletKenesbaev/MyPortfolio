@@ -42,10 +42,10 @@ function Porfolio() {
             <div className="porfolio__item-img">
               <img src={youtube} alt="img" />
             </div>
-            <h3>Youtube clone</h3>
+            <h3>Finsweet</h3>
             <p className='mt-3 mb-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illo veniam praesentium blanditiis soluta! Ipsa consectetur dolore dolor explicabo corporis!</p>
-            <a href="https://github.com/NUKUS777/Youtube-clone" className='btn mr-5' target='_blank'>Git Hub</a>
-            <a href="https://youtube-clone-three-gray.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
+            <a href="https://github.com/NUKUS777/Finsweet" className='btn mr-5' target='_blank'>Git Hub</a>
+            <a href="https://finsweet-teal.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </article>
         </div>
       </div>
