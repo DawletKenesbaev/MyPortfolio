@@ -44,7 +44,7 @@ function Porfolio() {
               <img src={finsweet} alt="img" />
             </div>
             <h3>Finsweet</h3>
-            <p className='mt-3 mb-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illo veniam praesentium blanditiis soluta! Ipsa consectetur dolore dolor explicabo corporis!</p>
+            <p className='mt-3 mb-3'>In this project, i used how to work with (fake) API from RESTAPI.com .This site for young entrepreneurs</p>
             <a href="https://github.com/NUKUS777/Finsweet" className='btn mr-5' target='_blank'>Git Hub</a>
             <a href="https://finsweet-teal.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </article>
