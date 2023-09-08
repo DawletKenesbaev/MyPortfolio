@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './about.scss'
-import Mer from '../../assets/me.jpg'
+import Mer from '../../assets/pp.jpg'
 function About() {
   return (
     <section id='about'>

@@ -1,6 +1,6 @@
 import React from 'react';
 import CTA from './CTA';
-import Me from '../../assets/me.jpg'
+import Me from '../../assets/pp.jpg'
 
 import './header.scss'
 
