@@ -1,8 +1,8 @@
 import React from 'react';
 import CTA from './CTA';
 import Me from '../../assets/pp.jpg'
-
 import './header.scss'
+import { motion } from "framer-motion";
 
 //icons
 // import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -21,6 +21,33 @@ function Header() {
         <img className='object-cover  h-[90%] w-[400px] float-left mr-4' src={Me} alt="" />
         </div>
         <a href="" className='scroll__down'>Scroll Down</a>
+       
+         
+          <div className='for_desktop'>
+            <motion.div
+              initial={{ x:-400}}
+              animate={{ x:400 }}
+              transition={{ duration: 3, ease: "easeInOut" }}
+              > I am Dawlet D
+            </motion.div>
+          </div>
+          <div className='for_tablet'>
+            <motion.div
+              initial={{ x:-300}}
+              animate={{ x:300 }}
+              transition={{ duration: 3, ease: "easeInOut" }}
+              > I am Dawlet T
+            </motion.div>
+          </div>
+          <div className='for_mobile'> 
+            <motion.div
+              initial={{ y:-300}}
+              animate={{ y:100 }}
+              transition={{ duration: 13, ease: "easeInOut" }}
+              > I am Dawlet M
+            </motion.div>
+          </div>
+
       </div>
     </header>
   )
