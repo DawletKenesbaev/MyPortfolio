@@ -14,12 +14,14 @@ import Experience from './components/experience/Experience.jsx';
 import Porfolio from './components/porfolio/Porfolio';
 import Footer from './components/footer/Footer';
 import Contact from './components/contact/Contact.jsx';
+import styled from '@emotion/styled';
+import Test from './components/test.js';
 function App() {
   return (
     <>
      <Header/>
      <Nav/>
-     <About/>
+     <Test/>
      <Experience/>
      <Porfolio/>
      <Contact/>
