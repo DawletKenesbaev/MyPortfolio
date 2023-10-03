@@ -4,10 +4,6 @@ import Me from '../../assets/pp.jpg'
 import './header.scss'
 import { motion } from "framer-motion";
 
-//icons
-// import LinkedInIcon from '@mui/icons-material/LinkedIn';
-// import GitHubIcon from '@mui/icons-material/GitHub';
-
 
 function Header() {
   return (
