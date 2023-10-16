@@ -31,7 +31,8 @@ function Porfolio() {
             <p className='mt-3 mb-3'>I created this project using HTML,CSS,Javascript .It is basic Todo List and has delete and checked functions.it is created using LocalStorage</p>
             <a href="https://github.com/NUKUS777/TodoList__usingLocalStorage" className='btn mr-5' target='_blank'>Git Hub</a>
             <a href="https://deft-crisp-eeaffa.netlify.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </article><article className='porfolio__item'>
+          </article>
+          <article className='porfolio__item'>
             <div className="porfolio__item-img">
               <img src={temp} alt="img" />
             </div>
@@ -39,7 +40,8 @@ function Porfolio() {
             <p className='mt-3 mb-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illo veniam praesentium blanditiis soluta! Ipsa consectetur dolore dolor explicabo corporis!</p>
             <a href="" className='btn mr-5' target='_blank'>Git Hub</a>
             <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </article><article className='porfolio__item'>
+          </article>
+          <article className='porfolio__item'>
             <div className="porfolio__item-img">
               <img src={finsweet} alt="img" />
             </div>

@@ -37,7 +37,7 @@ function Contact() {
             <article  className="contact__option">
               <TelegramIcon  className='contact__option-icon'/>
               <h4>Telegram</h4>
-              <h5>@DKenesbaev</h5>
+              <h5>@username8168</h5>
               <a href="https://t.me/DKenesbaev" target='_blank'>Send Me Message</a>
             </article>
             <article  className="contact__option">
