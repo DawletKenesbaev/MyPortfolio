@@ -43,7 +43,7 @@ function Contact() {
             <article  className="contact__option">
               <CallIcon  className='contact__option-icon'/>
               <h4>Phone</h4>
-              <h5> +998917883433</h5>
+              <h5> +998934710906</h5>
               <a href="tel:+998917883433"  target='_blank'>Call Me</a>
             </article>
           </div>
